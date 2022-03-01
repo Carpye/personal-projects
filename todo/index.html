@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-do List!</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>To-do List</h1>
+        </header>
+        <div id="particles-js">
+            
+            <section>
+                <article id="manage_tasks">
+                    <div class="glass-wrap">
+                        <div class="glass T">
+                            <p>Total Tasks: 0</p>
+                        </div>
+                        <div class="glass A">
+                            <p>Active Tasks: 0</p>
+                        </div>
+                    </div>
+                        <!-- <form action="main.php" method="post"> -->
+                            <input type="text" name="task" class="add_task"
+                            id="add_task" placeholder="Add task!" value="">
+                            <br>
+                            <input type="submit" value="Submit" class="submit_task"
+                            id="submit_task">
+                            <br>
+                            <input type="button" value="Clear List" class="clear_list"
+                            id="clear_list">
+                        <!-- </form> -->
+                </article>
+                <article id="tasks_list">
+            
+                </article>
+            </section>
+        </div>
+    </main>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src=""></script>
+<script>
+    particlesJS.load('particles-js', 'src/particles.json', () => 
+    console.log('Wszystko ok'));
+</script>
+</body>
+</html>
